@@ -1,0 +1,22 @@
+server:
+  port: 8092
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: tlawkqrijujyny
+    password: 8f5b93446cbbe872c945b2d87b2098b4c715235cfd2f4240fe2eb11a2715b524
+    url: jdbc:postgresql://ec2-54-196-65-186.compute-1.amazonaws.com:5432/dd9vnegb1h5tjj
+    platform: postgres
+    initialization-mode: always
+    continue-on-error: true
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+    #     ddl-auto: create
+    database: postgresql
+  logging:
+    pattern:
+      console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
+
