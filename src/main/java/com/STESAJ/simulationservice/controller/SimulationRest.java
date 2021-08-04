@@ -21,7 +21,7 @@ import java.util.stream.Collectors;
 @Slf4j
 @RestController
 @RequestMapping("/simulations")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 public class SimulationRest {
 
     @Autowired
